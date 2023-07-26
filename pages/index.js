@@ -1,13 +1,11 @@
 import Link from 'next/link';
-import Head from 'next/head';
+import style from './style.module.css';
+
 const IndexPage = () => {
 
     return (
         <>
-            <Head>
-                <link rel="stylesheet" href="/style/style.css" />
-            </Head>
-            <div className='drawer'>
+            <div className={style.drawer}>
                 <h1>Sistema de Cadastro</h1>
                 <ul>
                     <li>
