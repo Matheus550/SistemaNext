@@ -43,22 +43,9 @@ const CadPessoa = () => {
     <div className='body'>
       <h1>Sistema de Cadastro</h1>
       <div className="tabs">
-        <button
-          className={activeTab === 'cadastro-pessoa' ? 'active' : ''}
-          onClick={() => handleTabClick('cadastro-pessoa')}
-        > Cadastro de Pessoa</button>
-        <button
-          className={activeTab === 'menu-financeiro' ? 'active' : ''}
-          onClick={() => handleTabClick('menu-financeiro')}
-        >
-          Menu Financeiro
-        </button>
-        <button
-          className={activeTab === 'menu-vendas' ? 'active' : ''}
-          onClick={() => handleTabClick('menu-vendas')}
-        >
-          Menu Vendas
-        </button>
+        <button className={activeTab === 'cadastro-pessoa' ? 'active' : ''} onClick={() => handleTabClick('cadastro-pessoa')}> Cadastro de Pessoa </button>
+        <button className={activeTab === 'menu-financeiro' ? 'active' : ''} onClick={() => handleTabClick('menu-financeiro')} > Menu Financeiro </button>
+        <button className={activeTab === 'menu-vendas' ? 'active' : ''} onClick={() => handleTabClick('menu-vendas')} > Menu Vendas </button>
       </div>
 
       {activeTab === 'cadastro-pessoa' && (
@@ -66,45 +53,25 @@ const CadPessoa = () => {
           <h2>Cadastro de Pessoa</h2>
           <form onSubmit={handleFormSubmit}>
             <label>Nome Fantasia:</label>
-            <input
-              type="text"
-              value={nomeFantasia}
-              onChange={(e) => setNomeFantasia(e.target.value)}
-            />
-
+            <input type="text" value={nomeFantasia} onChange={(e) => setNomeFantasia(e.target.value)} />
             <label>Tipo de Pessoa:</label>
             <select value={tipoPessoa} onChange={(e) => setTipoPessoa(e.target.value)}>
               <option value="fisica">Física</option>
               <option value="juridica">Jurídica</option>
             </select>
-
             {tipoPessoa === 'juridica' ? (
               <div>
                 <label>CNPJ:</label>
-                <input
-                  type="text"
-                  value={documento}
-                  onChange={(e) => setDocumento(e.target.value)}
-                />
-
+                <input type="text" value={documento} onChange={(e) => setDocumento(e.target.value)} />
                 <label>Inscrição Estadual:</label>
                 <input type="text" />
               </div>
             ) : (
               <div>
                 <label>CPF:</label>
-                <input
-                  type="text"
-                  value={documento}
-                  onChange={(e) => setDocumento(e.target.value)}
-                />
-
+                <input type="text" value={documento}  onChange={(e) => setDocumento(e.target.value)} />
                 <label>Data de Nascimento:</label>
-                <input
-                  type="date"
-                  value={dataNascimento}
-                  onChange={(e) => setDataNascimento(e.target.value)}
-                />
+                <input type="date" value={dataNascimento} onChange={(e) => setDataNascimento(e.target.value)} />
               </div>
             )}
 

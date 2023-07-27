@@ -5,9 +5,7 @@ const CadIndex = () => {
         <>
             <div>
                 <h1>Sistema de Cadastro</h1>
-                <Link href="/cadastro/pessoa">
-                    Cadastrar Pessoa
-                </Link>
+                <Link href="/cadastro/pessoa">Cadastro de Pessoa</Link>
 
             </div>
         </>

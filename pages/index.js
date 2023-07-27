@@ -9,10 +9,10 @@ const IndexPage = () => {
                 <h1>Sistema de Cadastro</h1>
                 <ul>
                     <li>
-                        <Link href="/cadastro/index-cad"> Cadastro de Pessoa </Link>
+                        <Link href="/cadastro/index-cad"> Cadastro </Link>
                     </li>
 
-                    {/* ... e assim por diante para os outros itens do menu */}
+
                 </ul>
             </div>
         </>
