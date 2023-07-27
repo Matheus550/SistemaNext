@@ -40,15 +40,13 @@ const CadPessoa = () => {
   };
 
   return (
-    <div>
+    <div className='body'>
       <h1>Sistema de Cadastro</h1>
       <div className="tabs">
         <button
           className={activeTab === 'cadastro-pessoa' ? 'active' : ''}
           onClick={() => handleTabClick('cadastro-pessoa')}
-        >
-          Cadastro de Pessoa
-        </button>
+        > Cadastro de Pessoa</button>
         <button
           className={activeTab === 'menu-financeiro' ? 'active' : ''}
           onClick={() => handleTabClick('menu-financeiro')}
