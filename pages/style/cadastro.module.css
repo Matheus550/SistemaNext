@@ -1,0 +1,68 @@
+/* Estilos gerais */
+.body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+
+/* Estilos para os botões de abas */
+.tabs {
+ 
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.tabs button {
+  padding: 10px 20px;
+  background-color: #f0f0f0;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.tabs button.active {
+  background-color: #ccc;
+}
+
+/* Estilos para os formulários */
+.tabs form {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.tabs form label {
+  margin-top: 10px;
+}
+
+.tabs form input{
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.tabs form select{
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.tabs form button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+/* Estilos para o layout responsivo */
+@media screen and (max-width: 768px) {
+  .tabs form {
+    max-width: 90%;
+  }
+}

@@ -4,9 +4,10 @@ const CadIndex = () => {
     return (
         <>
             <div>
-                <h1>Sistema de Cadastro</h1>
-                <Link href="/cadastro/pessoa">Cadastro de Pessoa</Link>
-
+                <h1>Aba Cadastro</h1>
+                <Link href="/cadastro/cad_pessoa">Cadastro de Pessoa</Link>
+                <br />
+                <Link href="/cadastro/cad_produto">Cadastro de Produto</Link>
             </div>
         </>
     );
